@@ -10,7 +10,7 @@ public class jdbc_connection {
 			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "vi18");
 			Statement smt = con.createStatement();
 			smt.executeUpdate("create table emp(eno number,ename varchar(20),empsal number)");
-			System.out.println("table created ");
+			System.out.println("table created successfully");
 
 		} catch (Exception e) {
 			System.out.println(e);
